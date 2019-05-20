@@ -92,7 +92,6 @@ class Game extends React.Component {
       const desc = move ?
         'Go to move #' + move :
         'Go to game start';
-      const row = Math.floor(history[move].point / 3) + 1;
       const colrow = move ?
         '(' + ((history[move].point % 3) + 1)  + ',' + (Math.floor(history[move].point / 3) + 1) + ')':
         '';
